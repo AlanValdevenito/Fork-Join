@@ -38,3 +38,17 @@ cargo run ~/Downloads/dataset/deaths 4 output.json
 ```
 
 El formato de salida con el dataset completo debe ser igual a la del archivo [expected_output.json](https://github.com/AlanValdevenito/Fork-Join/blob/main/expected_output.json), sin importar el orden de aparición de las keys en los mapas.
+
+## Concurrencia
+
+Se utiliza el modelo Fork-Join:
+1. Cada archivo CSV se procesa de manera paralela en threads separados.
+2. Luego se combinan los resultados parciales usando las funciones merge_killers y merge_weapons_stats.
+
+<br>
+
+<img width="739" height="532" alt="image" src="https://github.com/user-attachments/assets/0534635e-60d0-402c-a0cb-caa1235e1aa5" />
+
+<br><br/>
+
+La cantidad de threads se puede ajustar por argumento de línea de comando.
