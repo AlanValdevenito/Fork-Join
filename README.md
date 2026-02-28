@@ -1,6 +1,6 @@
 # Fork Join
 
-Trabajo practico para la materia [Técnicas de Programación Concurrente I](https://concurrentes-fiuba.github.io/Inicio.html) en el cual se implementa un programa en Rust para procesar datasets de PUBG y obtener estadísticas sobre jugadores y armas, utilizando concurrencia con el modelo **Fork-Join**. 
+Trabajo practico para la materia [Programación Concurrente](https://concurrentes-fiuba.github.io/Inicio.html) en el cual se implementa un programa en Rust para procesar datasets de PUBG y obtener estadísticas sobre jugadores y armas, utilizando concurrencia con el modelo **Fork-Join**. 
 
 El objetivo del trabajo práctico es analizar un dataset con dumps de partidas de PUBG (disponible en [Kaggle](https://www.kaggle.com/datasets/skihikingkevin/pubg-match-deaths)) para generar estadísticas sobre:
 1. **Top 10 de armas** más usadas para matar (`killed_by`), con el porcentaje de muertes respecto al total y el promedio de distancia entre asesino y víctima.
